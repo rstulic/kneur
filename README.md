@@ -1,4 +1,4 @@
-KnEur
+# KnEur
 
 ![icon](https://github.com/rstulic/kneur/assets/160012889/de956a4c-925b-44cb-9fe7-2b58877c04b0)
 
@@ -18,14 +18,19 @@ No unnecessary button clicks. You don't even have to choose if you are convertin
 Just open it and you can immediately start inputting the value. The results are shown instantaneously.
 
 ---
+### Download:
 
-Demo:
+[rstulic.kneur1.0.1.apk](https://github.com/rstulic/kneur/raw/master/app/release/rstulic.kneur1.0.1.apk)
+
+---
+
+### Demo:
 
 ![kneur](https://github.com/rstulic/kneur/assets/160012889/935fd80c-0f2e-4908-9beb-8531807fa77d)
 
 ---
 
-Light theme / dark theme:
+### Light theme / dark theme:
 
 ![image](https://github.com/rstulic/kneur/assets/160012889/655b6e6c-2bdc-46b8-bfb5-5afb8ec8ea6c) ![image](https://github.com/rstulic/kneur/assets/160012889/be810cc5-3363-498f-9a03-6c46f565bfbd)
 

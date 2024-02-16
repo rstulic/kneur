@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.github.rstulic.kneur.MainActivity" >
+    tools:context="com.github.rstulic.kneur.MainActivity"
+    tools:ignore="HardcodedText" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
             android:layout_weight="9"
             android:ems="16"
             android:inputType="numberDecimal"
-            android:textSize="24sp" />
+            android:textSize="24sp"/>
 
         <Button
             android:id="@+id/buttonClear"
@@ -41,16 +42,16 @@
         android:layout_marginBottom="16dp" >
 
         <TextView
-            android:id="@+id/TextView01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KN ➡ EUR: " />
+            android:text="KN ➡ EUR: "
+            android:labelFor="@id/editTextInput"/>
 
         <TextView
             android:id="@+id/TextViewHrkToEur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="end"
             android:text=""
             android:textSize="24sp" />
     </LinearLayout>
@@ -61,7 +62,6 @@
         android:layout_marginBottom="16dp" >
 
         <TextView
-            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="EUR ➡ KN: " />
@@ -70,7 +70,7 @@
             android:id="@+id/textViewEurToHrk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="end"
             android:text=""
             android:textSize="24sp" />
     </LinearLayout>
@@ -105,7 +105,8 @@
                 android:gravity="center"
                 android:text="2"
                 android:textAlignment="center"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                 />
 
             <Button
                 android:id="@+id/button3"
@@ -231,7 +232,6 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tečaj: 1 EUR = 7.5345 KN" />

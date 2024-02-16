@@ -1,18 +1,15 @@
 package com.github.rstulic.kneur;
 
-import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import com.github.rstulic.kneur.R;
+
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 
 public class MainActivity extends Activity {
 
@@ -20,7 +17,7 @@ public class MainActivity extends Activity {
     TextView textViewHrkToEur;
     TextView textViewEurToHrk;
 
-    int[] buttonIds = new int[] { R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
+    final int[] buttonIds = new int[] { R.id.button0, R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5, R.id.button6,
             R.id.button7, R.id.button8, R.id.button9 };
 
     @Override
@@ -52,41 +49,17 @@ public class MainActivity extends Activity {
         for (int i = 0; i < buttonIds.length; i++) {
             Button btn = (Button) findViewById(buttonIds[i]);
             final int n = i;
-            btn.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View arg0) {
-                    numberPressed(n);
-                }
-            });
+            btn.setOnClickListener(v -> numberPressed(n));
         }
 
         Button btnErase = (Button) findViewById(R.id.buttonErase);
-        btnErase.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                erasePressed();
-            }
-        });
+        btnErase.setOnClickListener(v -> erasePressed());
 
         Button btnDecimal = (Button) findViewById(R.id.buttonDecimal);
-        btnDecimal.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                decimalPressed();
-            }
-        });
+        btnDecimal.setOnClickListener(v -> decimalPressed());
 
         Button btnClear = (Button) findViewById(R.id.buttonClear);
-        btnClear.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-                clearPressed();
-            }
-        });
+        btnClear.setOnClickListener(v -> clearPressed());
     }
 
     private void numberPressed(int number) {
